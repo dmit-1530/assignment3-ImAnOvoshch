@@ -1,4 +1,4 @@
-/* ***************** utilities & containers ***************** */
+/* ***************** Utilities & Containers ***************** */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
@@ -8,7 +8,7 @@ body {
     padding: 0 1rem;
 }
 
-/* ***************** global typography ***************** */
+/* ***************** Global Typography ***************** */
 h1 {
     font-size: 2.0625rem;
     color: #fff;
@@ -29,7 +29,7 @@ p {
     margin-bottom: 1.375rem;
 }
 
-/* ***************** header ***************** */
+/* ***************** Header ***************** */
 header {
     background-color: #57534E;
     padding: 1.375rem 0 0.6875rem 0;
@@ -55,7 +55,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ***************** main content ***************** */
+/* ***************** Main Content ***************** */
 section {
     margin-bottom: 5.5rem;
 }
@@ -134,6 +134,7 @@ form input[id="email"] {
     border: 1px solid #A8A29E;
     border-radius: 0.25rem;
     margin-bottom: 0.6875rem;
+    height: 3.4375rem;
 }
 
 form .btn {
@@ -149,17 +150,64 @@ form .btn:hover {
 }
 
 
-/* ***************** footer ***************** */
+/* ***************** Footer ***************** */
 footer {
     background-color: #57534E;
     color: #fff;
     padding: 4.125rem 0;
 }
 
-/* ***************** Add media query for the 588px screen ***************** */
+/* ***************** Media Query for 588px ***************** */
 
-/* ***************** footer ***************** */
+@media screen and (min-width: 588px) {
+    header div.container {
+        display: flex;
+        justify-content: space-between;
+    }
 
-/* ***************** footer ***************** */
+    header div.container ul {
+        display: flex;
+        column-gap: 2.75rem;
+    }
 
-/* test commit */
+    main aside div form div {
+        display: flex;
+    }
+
+    main aside div form div input:first-of-type {
+        max-width: 23.9375rem;
+        border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    main aside div form div input:nth-of-type(2) {
+        max-width: 10.8125rem;
+        height: 3.4375rem;
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+}
+
+/* ***************** Media Query for 980px ***************** */
+
+@media screen and (min-width: 980px) {
+    main {
+        display: flex;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    main > section {
+        width: calc((100% / 2) - (2rem / 2));
+    }
+
+    main aside {
+        width: 100%;
+    }
+
+    .btn-center {
+        justify-content: flex-start;
+    }
+
+    footer div {
+        max-width: 60ch;
+    }
+}
