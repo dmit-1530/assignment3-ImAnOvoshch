@@ -164,6 +164,7 @@ footer {
     header div.container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     header div.container ul {
@@ -255,5 +256,3 @@ footer {
         width: calc((100% / 2) - (2rem / 2));
     }
 }
-
-/* Final Commit + js folder */
