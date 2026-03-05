@@ -78,6 +78,7 @@ ol li {
     background-color: #A4DD00;
     border-radius: 0.25rem;
     text-decoration: none;
+    color: black;
 }
 
 .btn:hover {
@@ -139,7 +140,7 @@ form input[id="email"] {
 
 form .btn {
     cursor: pointer;
-    background-color: #fff;
+    background: #E7E5E4;
     width: 100%;
     border: 1px solid #57534E;
 }
